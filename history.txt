@@ -1,0 +1,11 @@
+
+  393  git clone git@github.com:beper223/git-feature.git
+  394  cd git-feature/
+  395  git checkout -b feature
+  396  git add .
+  397  git commit -m "add readme.md"
+  398  git push --set-upstream origin feature
+  399  git commit --amend
+  400  git checkout main
+  401  git merge feature
+  402  history > history.txt
